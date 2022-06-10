@@ -1,5 +1,5 @@
 # to-do
-To-do app built with `NodeJS` and `Express` as an API. The user can add items to the list, check off items when they are completed, and remove completed items from the list. Everything is stored in the user's session once saved.
+To-do app built with `NodeJS`, `Express`, and `Handlebars` as an API. The user can add items to the list, check off items when they are completed, and remove completed items from the list. Everything is stored in the user's session once saved.
 
 ### Built HTTP Requests
 
