@@ -12,8 +12,10 @@ To-do app built with `NodeJS`, `Express`, and `Handlebars` as an API. The user c
 
 ## Instructions
 To execute it on your local machine, clone the repository and run
-- `npm install` to install the necessary APIs for the application.
-- `npm run start` to start the server which should be listening on port `8000` or as specified on `lib/config.js`
+```npm install```
+To install the necessary APIs for the application.
+```npm run start```
+To start the server which should be listening on port `8000` or as specified on `lib/config.js`
 
 ## Demo
 ![todo-demo](https://user-images.githubusercontent.com/83131937/172984915-1a088940-caef-4aa8-8216-31977158c090.gif)
