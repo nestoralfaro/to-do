@@ -1,0 +1,27 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.1",
+  "description": "A to-do list express application",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node .",
+    "start:watch": "nodemon -i sessions ."
+  },
+  "author": "Nestor Alfaro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0",
+    "session-file-store": "^1.5.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}

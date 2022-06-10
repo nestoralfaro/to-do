@@ -1,0 +1,44 @@
+ <!DOCTYPE html> 
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="styles.css"/>
+        </head>
+        <body>
+            <h1>To-Do List</h1>
+            <hr>
+            <table>
+                <form method="POST" >
+                    {{#if todo}}
+                        {{#each todo as |value index|}}
+                            {{#if value.value}}
+                                <tr class="item">
+                                    <td><input id="item-{{index}}" name="item-{{index}}" type="checkbox" checked class="checkbox"/></td>
+                                    <td><label for="item-{{index}}">{{item}}</label></td>
+                                </tr>
+                            {{else}}
+                                <tr class="item">
+                                    <td><input id="item-{{index}}" name="item-{{index}}" type="checkbox" class="checkbox"/></td>
+                                    <td><label for="item-{{index}}">{{item}}</label></td>
+                                </tr>
+                            {{/if}}
+                        {{/each}}
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Save" formaction="save" class="btn"/>
+                                <input type="submit" value="Remove Checked" formaction="remove" class="btn"/>
+                            </td>
+                        </tr>
+                    {{else}}
+                        <tr>
+                            <td>No to-do items</td>
+                        </tr>
+                    {{/if}}
+                </form>
+            </table>
+            <form method="POST" action="add">
+                <input type="text" name="item" placeholder="Enter item description" autofocus required class="item-input"/>
+                <input type="submit" value="Add" class="btn add-btn"/>
+            </form>
+        </body>
+    </html>
